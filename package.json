@@ -1,0 +1,26 @@
+{
+  "name": "grunticon-brunch",
+  "version": "0.0.1",
+  "description": "Adds Grunticon support to brunch.",
+  "author": "Roberto Dip (http://roperzh.com)",
+  "homepage": "https://github.com/roperzh/grunticon-brunch",
+  "license": "MIT",
+  "keywords": [
+    "brunch",
+    "brunch-plugin",
+    "brunch-compiler",
+    "grunticon",
+    "svg",
+    "images",
+    "grunticon-lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:roperzh/grunticon-brunch.git"
+  },
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "dependencies": {
+  },
+}
