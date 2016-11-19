@@ -9,9 +9,53 @@ Install the plugin via npm with `npm install --save grunticon-brunch`.
 Or, do manual install:
 
 * Add `"grunticon-brunch": "x.y.z"` to `package.json` of your brunch app.
-  Pick a plugin version that corresponds to your minor (y) brunch version.
 * If you want to use git version of plugin, add
 `"grunticon-brunch": "git+ssh://git@github.com:roperzh/grunticon-brunch.git"`.
+
+That's it! no further configuration is needed, but if the default config does
+not suit your needs, please check the [configuration](#configuration) section.
+
+## Configuration
+
+The plugin can be configured by adding a `grunticonBrunch` object to your
+[plugins configuration](http://brunch.io/docs/config.html#-plugins-).
+
+```javascript
+/*
+  See http://brunch.io/docs/config.html#-plugins-
+  for documentation
+*/
+exports.config = {
+  // ...
+  plugins: {
+    grunticonBrunch: {
+      source: "/some/source",
+      destination: "/some/destination",
+      grunticonOptions: {}
+    }
+  }
+};
+```
+
+### Avaliable options
+
+#### source
+Type: `String`
+
+Valid glob pattern to search for files, default is `'app/assets/**/*.svg'`.
+
+#### destination
+Type: `String`
+
+Directory you'd like to output the CSS files, the PNG folder,
+and the preview HTML, default is `'/public'`.
+
+### grunticonOptions
+Type: `Object`
+
+This object will be directly passed to the `grunticon-lib` constructor, please
+refer to the official [docs](https://github.com/filamentgroup/grunticon-lib#options)
+to see all available options.
 
 ## License
 
