@@ -5,6 +5,7 @@
   "author": "Roberto Dip (http://roperzh.com)",
   "homepage": "https://github.com/roperzh/grunticon-brunch",
   "license": "MIT",
+  "main": "./index",
   "keywords": [
     "brunch",
     "brunch-plugin",
@@ -22,5 +23,6 @@
     "test": "node ./test.js"
   },
   "dependencies": {
-  },
+    "grunticon-lib": "^1.2.1"
+  }
 }
